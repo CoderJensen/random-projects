@@ -1,0 +1,81 @@
+#Fantasy Haiku Generator
+#Uses random predetermined poetry lines to generate a haiku.
+#
+#By Carter A. Jensen
+#Last edited: 3/24/19
+
+
+import random
+
+
+#Generating random rolls for poem lines
+#Add larger range for more options.
+roll1 = random.randint(1,7)
+roll2 = random.randint(1,7)
+roll3 = random.randint(1,7)
+
+
+#Line 1 of poem
+#Assigned though basic if, elif, and else.
+if roll1 == 1:
+ line1 = ("A troll before me,")
+elif roll1 == 2:
+ line1 = ("Vile orcs surround me,")
+elif roll1 == 3:
+ line1 = ("Elves scattered in trees,")
+elif roll1 == 4:
+ line1 = ("Villagers rally,")
+elif roll1 == 5:
+ line1 = ("A burly man grins,")
+elif roll1 == 6:
+ line1 = ("The wizard's eyes glow,")
+elif roll1 == 7:
+ line1 = ("Skeletons rise up,")
+else:
+ line1 = ("Well that isn't good...")
+
+
+#Line 2 of poem
+#Same as before.
+if roll2 == 1:
+ line2 = ("I clutch my battle-worn axe,")
+elif roll2 == 2:
+ line2 = ("A bead of sweat on my brow,")
+elif roll2 == 3:
+ line2 = ("An arrow misses my head,")
+elif roll2 == 4:
+ line2 = ("I drop my sword to the ground,")
+elif roll2 == 5:
+ line2 = ("I must have made a wrong turn...")
+elif roll2 == 6:
+ line2 = ("Magic flows through my fingers,")
+elif roll2 == 7:
+ line2 = ("'Hey, what's that thing over there?'")
+else:
+ line2 = ("I hate to break it to you...")
+
+
+#Line 3 of poem
+#Same as before.
+if roll3 == 1:
+ line3 = ("I yell out for help")
+elif roll3 == 2:
+ line3 = ("Now my time has come.")
+elif roll3 == 3:
+ line3 = ("Time for me to leave...")
+elif roll3 == 4:
+ line3 = ("I'll just run away.")
+elif roll3 == 5:
+ line3 = ("This will not end well.")
+elif roll3 == 6:
+ line3 = ("I charge at full speed!")
+elif roll3 == 7:
+ line3 = ("Oh no, not again...")
+else:
+ line3 = ("But something just broke...")
+
+
+#Printing individual lines of the poem.
+print (line1)
+print (line2)
+print (line3)
