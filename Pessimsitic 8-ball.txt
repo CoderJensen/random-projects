@@ -1,0 +1,75 @@
+﻿#Pessimistic 8-Ball
+#A ball half-empty.
+#
+#Last edited: 3/25/19
+#By Carter A. Jensen
+
+
+import random
+
+
+#Blank variable for loop.
+question = ""
+
+
+#Line that prints the command that exits the loop.
+print ("\nType ‘stop’ to end the program.\n")
+
+
+#Creating simple loop for program.
+while question != "stop":
+#Getting question from user
+question = input("What would you like to ask Pessimistic 8-ball?\n")
+
+
+#Random number assigned to roll
+roll = random.randint (1,20)
+
+
+#Assigning 8-ball's response to the answer with the value of roll
+if roll == 1:
+  answer = ("No way, Jose!")
+elif roll == 2:
+  answer = ("Are you joking?")
+elif roll == 3:
+  answer = ("Ha! No...")
+elif roll == 4:
+  answer = ("Puh-lease")
+elif roll == 5:
+  answer = ("Impossible")
+elif roll == 6:
+  answer = ("Negative")
+elif roll == 7:
+  answer = ("When pigs fly")
+elif roll == 8:
+  answer = ("Never")
+elif roll == 9:
+  answer = ("Nope")
+elif roll == 10:
+  answer = ("Nada")
+elif roll == 11:
+  answer = ("Really?...")
+elif roll == 12:
+  answer = ("Of course not")
+elif roll == 13:
+  answer = ("Nein")
+elif roll == 14:
+  answer = ("01001110 01101111")
+elif roll == 15:
+  answer = ("oN")
+elif roll == 16:
+  answer = ("Yesn't")
+elif roll == 17:
+  answer = ("...")
+elif roll == 18:
+  answer = ("I don't think so")
+elif roll == 19:
+  answer = ("If my math is correct... That's a one \nin 1000000000000000000000000000000000000000000 chance")
+elif roll == 20:
+  answer = ("No")
+else:
+  answer = ("No, but this program is broken.")
+
+
+#printing 8-ball's response with the answer variable
+print ("\nPessimistic 8-ball says: " + answer + "\n\n\n")
